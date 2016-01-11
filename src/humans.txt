@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Lenny Peters -- Front-End Developer -- @loonz206
+
+# THANKS
+
+    Allan Bogh, Darin Tramillios, Jason Marshall, Mark Jindra
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, JAVASCRIPT, ANGULAR 1.5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
