@@ -67,7 +67,9 @@ What follows is a general overview of each major part and how to use them.
 
 ### app
 
-Bootstraps the angular application
+Bootstraps the angular application, all areas or views can sit alongside this application
+area. And a sweet reminder that components in this directory will have .spec.js files and templates sitting alongside
+each module.
 
 ### assets
 
