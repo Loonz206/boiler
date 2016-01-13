@@ -9,17 +9,24 @@ usually involves the following:
 1. Set up the basic structure of the site.
 2. Add some content, style, and functionality.
 3. Run your site locally to see how it looks.
-4. (Optionally run a build script to automate the optimization of your site -
-   e.g. [ant build script](https://github.com/h5bp/ant-build-script))
-5. Deploy your site.
+4. Run gulp to see your site serve in localhost
+5. (Optionally run a build script to automate the optimization of your site -
+6. Deploy your site.
 
 
 ## Basic structure
 
-A basic HTML5 Boilerplate site initially looks something like this:
+A basic boiler site initially looks something like this:
 
 ```
 .
+├── app
+├── assets
+├── componets
+│   ├── directives
+│   ├── factories
+│   ├── filters
+│   └── services
 ├── css
 │   ├── main.css
 │   └── normalize.css
@@ -31,6 +38,17 @@ A basic HTML5 Boilerplate site initially looks something like this:
 │   └── vendor
 │       ├── jquery.min.js
 │       └── modernizr.min.js
+├── less
+│   ├── animate.less
+│   ├── desktop.less
+│   ├── forms.less
+│   ├── main.less
+│   ├── mixins.less
+│   ├── normalize.less
+│   ├── tablet.less
+│   ├── typography.less
+│   └── variables.less
+├── test
 ├── .editorconfig
 ├── .htaccess
 ├── 404.html
@@ -47,11 +65,31 @@ A basic HTML5 Boilerplate site initially looks something like this:
 
 What follows is a general overview of each major part and how to use them.
 
+### app
+
+Bootstraps the angular application
+
+### assets
+
+Kinda torn on this one for holding all of the assets needed for an application that are not
+images to be optimized. Aka fontawesome, svgs and PDF and whatever other items. I could remove this.
+
 ### css
 
 This directory should contain all your project's CSS files. It includes some
 initial CSS to help get you started from a solid foundation. [About the
 CSS](css.md).
+
+### components
+
+This directory should contain basic areas of application from a angular side of things.
+Factories, Services and Directives and Filters and .spec.js files should sit alongside each
+of these components
+
+### less
+
+This directory should contain all of your project's .less files that get complied into
+css to get a single sheet of css that is piped to /dist and minified.
 
 ### doc
 
