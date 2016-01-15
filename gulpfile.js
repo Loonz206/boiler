@@ -30,7 +30,7 @@ var runSequence = require('run-sequence');    // Temporary solution until gulp 4
 var pkg  = require('./package.json');
 var dirs = pkg['h5bp-configs'].directories;
 
-//Beep Error Messaging + Red Coloring FTW.
+// Beep Error Messaging + Red Coloring FTW.
 var onError = function (err) {
     beep([1000, 500, 1500]);
     gutil.log(gutil.colors.red(err));
@@ -175,6 +175,7 @@ gulp.task('lint:js', function () {
 // | Minor tasks                                                        |
 // ---------------------------------------------------------------------
 
+// Watch JS for changes and reload on changes
 gulp.task('jshint', function () {
     return gulp.src('src/app/**/*.js')
     .pipe(plumber())
@@ -194,6 +195,7 @@ gulp.task('jshint', function () {
     .on('error', gutil.log);
 });
 
+// Watch less files for changes and reload on changes
 gulp.task('less', function () {
     return gulp.src('src/less/main.less')
     .pipe(plumber({errorHandler: onError}))
@@ -211,6 +213,7 @@ gulp.task('less', function () {
     .on('error', gutil.log);
 });
 
+// Watch images for changes and reload on changes
 gulp.task('images', function () {
     return gulp.src('src/img/**/*')
     .pipe(plumber({errorHandler: onError}))
@@ -220,6 +223,7 @@ gulp.task('images', function () {
     .pipe(notify({ message: 'Image task complete'}));
 });
 
+// Watch html for changes and reload on changes
 gulp.task('html', function (){
     return gulp.src('src/**/*.html')
     .pipe(plumber({errorHandler: onError}))
@@ -228,7 +232,7 @@ gulp.task('html', function (){
     .pipe(notify({ message: 'Html task complete'}));
 });
 
-//watches the gulpfile as its running as well
+// watches the gulpfile as its running as well
 gulp.slurped = false; //step 1
 
 gulp.task('watch', function () {
@@ -242,6 +246,7 @@ gulp.task('watch', function () {
     }
 });
 
+// Serve a site after running multiple tasks
 gulp.task('serve', ['images', 'jshint', 'html', 'less'], function () {
      browserSync.init({
         server: {
@@ -252,11 +257,11 @@ gulp.task('serve', ['images', 'jshint', 'html', 'less'], function () {
     });
 });
 
-
 // ---------------------------------------------------------------------
 // | Main tasks                                                        |
 // ---------------------------------------------------------------------
 
+// Test suites for intergration tests using Karma/Jasmine running on .spec.js files
 gulp.task('test', function (done) {
   new Server({
     configFile: __dirname + '/karma.conf.js',
@@ -290,6 +295,7 @@ gulp.task('browser-sync', function() {
     });
 });
 
+// Default task.. why type more?
 gulp.task('default', ['clean'], function(){
     gulp.start('serve','watch', reload);
 });
