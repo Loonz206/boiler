@@ -20,6 +20,9 @@ var filesize = require('gulp-filesize');
 var beep = require('beepbeep');
 var gulp      = require('gulp');
 var Server = require('karma').Server;
+var protractor = require('gulp-protractor').protractor;
+var webdriver_standalone = require('gulp-protractor').webdriver_standalone;
+var webdriver_update = require('gulp-protractor').webdriver_update;
 var plugins   = require('gulp-load-plugins')(); // Load all gulp plugins
                                               // automatically and attach
                                               // them to the `plugins` object
@@ -289,6 +292,9 @@ gulp.task('browser-sync', function() {
         }
     });
 });
+
+gulp.task('webdriver_update', webdriver_update);
+gulp.task('webdriver_standalone', webdriver_standalone);
 
 // Setting up the test task
 gulp.task('protractor', ['webdriver_update'], function(cb) {
