@@ -1,1 +1,88 @@
 // Typography -->
+//
+/* Times New Roman-based stack */
+@timesNewRomanSerif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+
+/* Modern Georgia-based serif stack */
+@georgiaSerif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+/* Traditional Garamond-based serif stack */
+@garamondSerif: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+
+/* Helvetica/Arial-based sans serif stack */
+@helveticaSansSerif: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* Verdana-based sans serif stack */
+@verdanaSansSerif: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+
+/* Trebuchet-based sans serif stack */
+@trebuchetSansSerif: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+
+/* Impact-based sans serif stack */
+@impactSansSerif: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+
+/* Monospace stack */
+@monospace: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+
+/* Custom Fonts */
+@customFont:;
+
+@serif:@georgiaSerif;
+@sansSerif:@helveticaSansSerif;
+
+body {
+    font-family: @sansSerif;
+    color:@primaryText;
+    line-height: 1.5em;
+    font-size: 0.875em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: @sansSerif;
+}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+.lead {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+p, a {
+    max-width: 42em;
+}
+
+strong {
+    font-family: @sansSerif;
+}
+
+em {
+    font-family: @serif;
+}
+
+blockquote {
+  background: #f9f9f9;
+  font-family: @serif;
+  border-left: 10px solid @dividerColor;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: @dividerColor;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
