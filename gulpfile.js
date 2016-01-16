@@ -310,6 +310,10 @@ gulp.task('protractor', ['webdriver_update'], function(cb) {
     }).on('end', cb);
 });
 
+gulp.task('smokeTests', function () {
+    gulp.start('protractor');
+});
+
 // Default task.. why type more?
 gulp.task('default', ['clean'], function(){
     gulp.start('serve','watch', reload);
