@@ -298,7 +298,6 @@ gulp.task('browser-sync', function() {
     });
 });
 
-<<<<<<< HEAD
 gulp.task('webdriver_update', webdriver_update);
 gulp.task('webdriver_standalone', webdriver_standalone);
 
@@ -311,9 +310,7 @@ gulp.task('protractor', ['webdriver_update'], function(cb) {
     }).on('end', cb);
 });
 
-=======
 // Default task.. why type more?
->>>>>>> fd26509e72724704193b60ec7d874ff40b254eda
 gulp.task('default', ['clean'], function(){
     gulp.start('serve','watch', reload);
 });
