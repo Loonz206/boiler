@@ -290,6 +290,15 @@ gulp.task('browser-sync', function() {
     });
 });
 
+// Setting up the test task
+gulp.task('protractor', ['webdriver_update'], function(cb) {
+    gulp.src(['spec/e2e/**/*.spec.js']).pipe(protractor({
+        configFile: 'spec/conf/conf.js',
+    })).on('error', function(e) {
+        console.log(e)
+    }).on('end', cb);
+});
+
 gulp.task('default', ['clean'], function(){
     gulp.start('serve','watch', reload);
 });
