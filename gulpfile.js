@@ -306,7 +306,7 @@ gulp.task('protractor', ['webdriver_update'], function(cb) {
     gulp.src(['spec/e2e/**/*.spec.js']).pipe(protractor({
         configFile: 'spec/conf/conf.js',
     })).on('error', function(e) {
-        console.log(e)
+        console.log(e);
     }).on('end', cb);
 });
 
