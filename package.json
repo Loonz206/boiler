@@ -38,6 +38,7 @@
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.6",
     "mocha": "^2.2.4",
+    "ngstorage": "^0.3.10",
     "normalize.css": "3.0.3",
     "path": "^0.12.7",
     "run-sequence": "^1.1.5"
