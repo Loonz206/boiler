@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@alrra/travis-scripts": "^1.1.1",
-    "angular": "^1.5.0-rc.0",
+    "angular": "^1.4.8",
     "angular-ui-router": "^0.2.15",
     "apache-server-configs": "2.14.0",
     "archiver": "^0.21.0",
