@@ -1,6 +1,6 @@
 'use strict';
 
-var angular;
+var angular, describe, it, expect;
 
 var myApp = angular.module('myApp', [
     'ui.router',
