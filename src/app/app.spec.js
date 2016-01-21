@@ -1,3 +1,5 @@
+'use strict';
+
 var describe, it, expect;
 
 describe('a simple test', function () {
