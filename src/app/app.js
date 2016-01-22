@@ -1,9 +1,8 @@
 'use strict';
 
-var angular, describe, it, expect;
+var angular;
 
-var myApp = angular.module('myApp', [
+angular.module('myApp', [
     'ui.router',
     'ngStorage'
 ]);
-

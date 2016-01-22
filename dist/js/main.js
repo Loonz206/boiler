@@ -1,12 +1,13 @@
 'use strict';
 
-var angular, describe, it, expect;
+var angular;
 
-var myApp = angular.module('myApp', [
+angular.module('myApp', [
     'ui.router',
     'ngStorage'
 ]);
 
+var describe, it, expect;
 
 describe('a simple test', function () {
 	it('should run a test on true', function () {
