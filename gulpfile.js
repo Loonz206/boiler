@@ -13,6 +13,7 @@ var minifycss = require('gulp-minify-css');
 var less      = require('gulp-less');
 var path      = require('path');
 var browserSync = require('browser-sync').create();
+var historyApiFallback = require('connect-history-api-fallback');
 var reload = browserSync.reload;
 var plumber   = require('gulp-plumber');
 var gutil = require('gulp-util');
@@ -255,7 +256,8 @@ gulp.task('serve', ['images', 'jshint', 'html', 'less'], function () {
         server: {
             baseDir: "src/.",
             open: "local",
-            browser: "google chrome"
+            browser: "google chrome",
+            middleware: [historyApiFallback()]
         }
     });
 });

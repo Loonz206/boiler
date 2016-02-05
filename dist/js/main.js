@@ -25,3 +25,11 @@ angular.module('myApp', [
 .controller('MainController', function ($scope, $http, $localStorage, $sessionStorage){
 	$scope.$storage = $localStorage;
 });
+
+var describe, it, expect;
+
+describe('a simple test', function () {
+	it('should run a test on true', function () {
+		expect(true).toBe(true);
+	});
+});
