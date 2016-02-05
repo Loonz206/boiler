@@ -7,6 +7,7 @@ angular.module('myApp', [
     'ngStorage'
 ])
 
+<<<<<<< HEAD
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider, $locationProvider ) {
 	$urlRouterProvider.otherwise("/home");
 	$stateProvider
@@ -24,6 +25,10 @@ angular.module('myApp', [
 
 .controller('MainController', function ($scope, $http, $localStorage, $sessionStorage){
 	$scope.$storage = $localStorage;
+=======
+.controller('mainController',function ($scope, $http, $localStorage, $sessionStorage){
+	//controller
+>>>>>>> 00fcbfd450b1c91e7cd68723e3c2789953b9f833
 });
 
 var describe, it, expect;
