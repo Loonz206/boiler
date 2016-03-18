@@ -1,15 +1,15 @@
 [
 	{
-		"name": "Lenny Peters",
-		"address": "806 B NW 54th St.",
+		"name": "Chicken Little",
+		"address": "123 Test St",
 		"city": "Seattle",
 		"state": "Washington",
-		"zip": 98102,
+		"zip": 12345,
 		"country": "USA",
-		"phone": 2066975068,
+		"phone": 1231231233,
 		"sex": "male",
 		"job": "Web Developer",
-		"age": 34,
+		"age": 99,
 		"single": true
 	},
 	{
