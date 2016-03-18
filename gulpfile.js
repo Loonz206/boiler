@@ -210,7 +210,7 @@ gulp.task('less', function () {
     .pipe(gulp.dest('src/css'))
     .pipe(filesize())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp-cssnano())
+    .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
     .pipe(filesize())
     .pipe(browserSync.stream({stream:true}))
