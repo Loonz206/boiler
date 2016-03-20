@@ -32,20 +32,6 @@
     <!-- Need this component for removing the # -->
     <base href="/">
 
-    <div class="wrapper">
-        <div class="block" ng-repeat="data in data">
-            <h1>{{data.name}}</h1>
-            <h3>{{data.address}}</h3>
-            <span>{{data.city}},</span>
-            <span>{{data.state}}</span>
-            <span>{{data.country}}</span>
-            <p>{{data.phone}}</p>
-            <p>Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Donec sed odio dui. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
-        </div>
-    </div>
-
-
-
     <!-- Required JS in the head / For Browsers that need help -->
     <script src="js/vendor/modernizr-2.8.3.min.js" async></script>
     <!-- CDN Setups -->
@@ -62,6 +48,15 @@
 
     <!-- Add your site or application content here -->
     <div class="wrapper">
+        <div class="block" ng-repeat="data in data">
+            <h1>{{data.name}}</h1>
+            <h3>{{data.address}}</h3>
+            <span>{{data.city}},</span>
+            <span>{{data.state}}</span>
+            <span>{{data.country}}</span>
+            <p>{{data.phone}}</p>
+            <p>Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Donec sed odio dui. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
+        </div>
         <!-- this is cool -->
     </div>
 

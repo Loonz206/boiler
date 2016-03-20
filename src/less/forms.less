@@ -1,1 +1,44 @@
 // Forms -->
+
+input {
+	min-width:42em;
+}
+
+input:not([type=submit]):not([type=file]) {
+	display:block;
+	min-width:42em;
+	padding:8px 16px;
+	margin:8px 0;
+	border:1px solid @dividerColor;
+	.border-radius (5px);
+	.box-sizing (box-sizing);
+	&:focus {
+		background-color: lighten(lightblue, 15%);
+	}
+}
+
+button {
+	min-width:23em;
+	padding: 8px 16px;
+	background-color: @brandSuccess;
+	color:@textIcons;
+	font-size: 1.5em;
+	text-shadow: 0 1px 1px @primaryText;
+	border: 1px solid darken(@brandSuccess, 20%);
+	.border-radius (5px);
+	.box-sizing (box-sizing);
+	.transition (background-color .5s ease);
+	box-shadow: 0 1px 1px @primaryText;
+	&:hover,
+	&:focus {
+		background-color: lighten(@brandSuccess, 10%);
+	}
+	&:active {
+		background-color: darken(@brandSuccess, 20%);
+	}
+}
+
+
+
+input[type=submit] {}
+input[type=file] {}
