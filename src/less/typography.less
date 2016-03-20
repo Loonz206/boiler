@@ -41,20 +41,33 @@ h1,h2,h3,h4,h5,h6 {
     font-family: @sansSerif;
 }
 
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
+h1 {
+  font-size: 3em; /*48px/16px*/
+}
+h2 {
+  font-size: 2.25em; /*36px/16px*/
+}
+h3 {
+  font-size: 1.5em; /*24px/16px*/
+}
+h4 {
+  font-size: 1.3125em; /*21px/16px*/
+}
+h5 {
+  font-size: 1.125em; /*18px/16px*/
+}
+h6 {
+  font-size: 1em; /*16px/16px*/
+}
 
 .lead {
     font-weight: 100;
     font-size: 18px;
 }
 
-p, a {
+p {
     max-width: 42em;
+    margin-bottom: 1.5em;
 }
 
 strong {
@@ -70,7 +83,7 @@ blockquote {
   font-family: @serif;
   border-left: 10px solid @dividerColor;
   margin: 1.5em 10px;
-  padding: 0.5em 10px;
+  padding: 0.875em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 
