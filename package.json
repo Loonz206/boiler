@@ -43,6 +43,7 @@
     "ngstorage": "^0.3.10",
     "normalize.css": "3.0.3",
     "path": "^0.12.7",
+    "protractor": "^3.2.2",
     "run-sequence": "^1.1.5"
   },
   "engines": {
