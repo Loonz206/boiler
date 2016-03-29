@@ -9,6 +9,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var notify    = require('gulp-notify');
 var rename    = require('gulp-rename');
 var cache     = require('gulp-cache');
+var cssnano   = require('gulp-cssnano');
 var minifycss = require('gulp-minify-css');
 var less      = require('gulp-less');
 var path      = require('path');
@@ -209,7 +210,7 @@ gulp.task('less', function () {
     .pipe(gulp.dest('src/css'))
     .pipe(filesize())
     .pipe(rename({suffix: '.min'}))
-    .pipe(minifycss())
+    .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
     .pipe(filesize())
     .pipe(browserSync.stream({stream:true}))

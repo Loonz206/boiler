@@ -23,5 +23,9 @@ angular.module('myApp', [
 })
 
 .controller('MainController', function ($scope, $http, $localStorage, $sessionStorage){
+	$http.get('js/data.json').success(function (data) {
+		$scope.data = data;
+	});
 	$scope.$storage = $localStorage;
+	$scope.$sessionStorage = $sessionStorage;
 });

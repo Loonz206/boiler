@@ -1,0 +1,28 @@
+[
+	{
+		"name": "Chicken Little",
+		"address": "123 Test St",
+		"city": "Seattle",
+		"state": "Washington",
+		"zip": 12345,
+		"country": "USA",
+		"phone": 1231231233,
+		"sex": "male",
+		"job": "Web Developer",
+		"age": 99,
+		"single": true
+	},
+	{
+		"name": "Barney Rubble",
+		"address": "443 Rubbleroad Drive",
+		"city": "Bedrock",
+		"state": "Washington",
+		"zip": 98102,
+		"country": "USA",
+		"phone": 2125552343,
+		"sex": "male",
+		"job": "Foreman",
+		"age": 28,
+		"single": false
+	}
+]
