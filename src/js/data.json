@@ -10,7 +10,8 @@
 		"sex": "male",
 		"job": "Web Developer",
 		"age": 99,
-		"single": true
+		"single": true,
+		"message": "Some sort of message about Chicken Little, a web developer from Seattle, Washington"
 	},
 	{
 		"name": "Barney Rubble",
@@ -23,6 +24,7 @@
 		"sex": "male",
 		"job": "Foreman",
 		"age": 28,
-		"single": false
+		"single": false,
+		"message": "Hearing is sent for the Bison Lodge meeting for the Flintstones"
 	}
 ]
