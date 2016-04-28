@@ -270,8 +270,7 @@ gulp.task('serve', ['images', 'jshint', 'html', 'less'], function () {
 // Test suites for intergration tests using Karma/Jasmine running on .spec.js files
 gulp.task('test', function (done) {
   new Server({
-    configFile: __dirname + '/karma.conf.js',
-    singleRun: true
+    configFile: __dirname + '/karma.conf.js'
   }, done).start();
 });
 
