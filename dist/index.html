@@ -47,9 +47,21 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-<div class="wrapper">
+<div id="wrap" class="wrap">
+    <a href="#menu" class="menu-link">
+        Menu &#9776;
+    </a>
 
-    <div class="block" ng-repeat="data in data">
+    <nav id="menu" role="navigation">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper" ng-repeat="data in data">
         <h1>{{data.name}}</h1>
         <h3>{{data.address}}</h3>
         <span>{{data.city}},</span>
@@ -58,7 +70,16 @@
         <p>{{data.phone}}</p>
         <p>{{data.message}}</p>
     </div>
-    <!-- this is cool -->
+    <!--<div class="block" ng-repeat="data in data">-->
+        <!--<h1>{{data.name}}</h1>-->
+        <!--<h3>{{data.address}}</h3>-->
+        <!--<span>{{data.city}},</span>-->
+        <!--<span>{{data.state}}</span>-->
+        <!--<span>{{data.country}}</span>-->
+        <!--<p>{{data.phone}}</p>-->
+        <!--<p>{{data.message}}</p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; this is cool &ndash;&gt;-->
 
 </div>
 
