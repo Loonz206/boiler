@@ -39,10 +39,12 @@
     "karma": "^0.13.19",
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^1.0.0",
     "mocha": "^2.2.4",
     "ngstorage": "^0.3.10",
     "normalize.css": "3.0.3",
     "path": "^0.12.7",
+    "phantomjs-prebuilt": "^2.1.7",
     "protractor": "^3.2.2",
     "run-sequence": "^1.1.5"
   },
