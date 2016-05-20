@@ -3,6 +3,7 @@ var path      = require('path');
 var jshint    = require('gulp-jshint');
 var stylish   = require('jshint-stylish');
 var concat    = require('gulp-concat');
+var usref     = require('gulp-useref');
 var uglify    = require('gulp-uglify');
 var imagemin  = require('gulp-imagemin');
 var sourcemaps = require('gulp-sourcemaps');
