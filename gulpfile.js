@@ -4,6 +4,7 @@ var jshint    = require('gulp-jshint');
 var stylish   = require('jshint-stylish');
 var useref    = require('gulp-useref');
 var concat    = require('gulp-concat');
+var usref     = require('gulp-useref');
 var uglify    = require('gulp-uglify');
 var imagemin  = require('gulp-imagemin');
 var sourcemaps = require('gulp-sourcemaps');
