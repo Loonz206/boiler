@@ -47,21 +47,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-<div id="wrap" class="wrap">
-    <a href="#menu" class="menu-link">
-        Menu &#9776;
-    </a>
+<div class="wrapper">
 
-    <nav id="menu" role="navigation">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="wrapper" ng-repeat="data in data">
+    <div class="block" ng-repeat="data in data">
         <h1>{{data.name}}</h1>
         <h3>{{data.address}}</h3>
         <span>{{data.city}},</span>
@@ -70,16 +58,9 @@
         <p>{{data.phone}}</p>
         <p>{{data.message}}</p>
     </div>
-    <!--<div class="block" ng-repeat="data in data">-->
-        <!--<h1>{{data.name}}</h1>-->
-        <!--<h3>{{data.address}}</h3>-->
-        <!--<span>{{data.city}},</span>-->
-        <!--<span>{{data.state}}</span>-->
-        <!--<span>{{data.country}}</span>-->
-        <!--<p>{{data.phone}}</p>-->
-        <!--<p>{{data.message}}</p>-->
-    <!--</div>-->
-    <!--&lt;!&ndash; this is cool &ndash;&gt;-->
+
+    <!-- this is cool -->
+
 
 </div>
 
@@ -99,8 +80,6 @@
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
 </script>
-<script src="app/app.js"></script>
-<script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
