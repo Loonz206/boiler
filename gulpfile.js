@@ -47,7 +47,6 @@ var paths = {
   scripts: [
     'src/app/app.js',
     'src/components/**/*.js',
-    'src/js/main.js',
     'src/js/plugins.js'
     ]
 };
