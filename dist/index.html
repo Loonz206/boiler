@@ -47,23 +47,36 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-<div class="wrapper">
 
-    <div class="block" ng-repeat="data in data">
-        <h1>{{data.name}}</h1>
-        <h3>{{data.address}}</h3>
-        <span>{{data.city}},</span>
-        <span>{{data.state}}</span>
-        <span>{{data.country}}</span>
-        <p>{{data.phone}}</p>
-        <p>{{data.message}}</p>
+<div id="wrap" class="wrap">
+    <a href="#menu" class="menu-link">
+        Menu &#9776;
+    </a>
+    <nav id="menu" role="navigation">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div class="block" ng-repeat="data in data">
+            <h1>{{data.name}}</h1>
+            <h3>{{data.address}}</h3>
+            <span>{{data.city}},</span>
+            <span>{{data.state}}</span>
+            <span>{{data.country}}</span>
+            <p>{{data.phone}}</p>
+            <p>{{data.message}}</p>
+        </div>
     </div>
+
 
     <!-- this is cool -->
 
-
 </div>
-
 
 <!-- Fallback Setups -->
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.0.min.js" async><\/script>')</script>
