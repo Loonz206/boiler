@@ -25,8 +25,8 @@
 
 $(document).ready(function () {
     $('body').addClass('js');
-    var $menu = $('#menu'),
-        $menulink = $('.menu-link'),
+
+    var $menulink = $('.menu-link'),
         $wrap = $('#wrap');
 
     $menulink.click(function() {

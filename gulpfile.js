@@ -198,14 +198,7 @@ gulp.task('useref', function () {
 
 // Watch JS for changes and reload on changes
 gulp.task('jshint', function () {
-<<<<<<< HEAD
-    return gulp.src([
-        'src/app/app.js',
-        'src/app/**/*.js'
-    ])
-=======
     return gulp.src(paths.scripts)
->>>>>>> 96c4396e9c51bbf95fad12e67ab7c6f309ed72bb
     .pipe(plumber())
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter(stylish))
