@@ -2,7 +2,11 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 
 #User specific stuff
-.idea/*
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
 
 #Coverage reporting
 coverage/*
