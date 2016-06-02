@@ -7,7 +7,9 @@ angular.module('myApp', [
     'ngStorage'
 ])
 
-.config( function myAppConfig ( $stateProvider, $urlRouterProvider, $locationProvider ) {
+.config( function myAppConfig ( $stateProvider, $urlRouterProvider, $locationProvider, $compileProvider ) {
+
+	$compileProvider.debugInfoEnabled(false);
 	$urlRouterProvider.otherwise("/home");
 	$stateProvider
 		.state('home', {

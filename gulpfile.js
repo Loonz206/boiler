@@ -3,7 +3,7 @@ var path      = require('path');
 var jshint    = require('gulp-jshint');
 var stylish   = require('jshint-stylish');
 var concat    = require('gulp-concat');
-var usref     = require('gulp-useref');
+var useref     = require('gulp-useref');
 var uglify    = require('gulp-uglify');
 var imagemin  = require('gulp-imagemin');
 var sourcemaps = require('gulp-sourcemaps');
@@ -183,7 +183,10 @@ gulp.task('lint:js', function () {
 
 // Watch JS for changes and reload on changes
 gulp.task('jshint', function () {
-    return gulp.src('src/app/**/*.js')
+    return gulp.src([
+        'src/app/app.js',
+        'src/app/**/*.js'
+    ])
     .pipe(plumber())
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter(stylish))
@@ -229,6 +232,10 @@ gulp.task('images', function () {
     .pipe(notify({ message: 'Image task complete'}));
 });
 
+gulp.task('compileJs', function () {
+   //
+});
+
 // Watch html for changes and reload on changes
 gulp.task('html', function (){
     return gulp.src('src/**/*.html')
@@ -268,7 +275,7 @@ gulp.task('serve', ['images', 'jshint', 'html', 'less'], function () {
 // | Main tasks                                                        |
 // ---------------------------------------------------------------------
 
-// Test suites for intergration tests using Karma/Jasmine running on .spec.js files
+// Test suites for integration tests using Karma/Jasmine running on .spec.js files
 gulp.task('test', function (done) {
   new Server({
     configFile: __dirname + '/karma.conf.js'
