@@ -2,6 +2,7 @@ var fs        = require('fs');
 var path      = require('path');
 var jshint    = require('gulp-jshint');
 var stylish   = require('jshint-stylish');
+var useref    = require('gulp-useref');
 var concat    = require('gulp-concat');
 var useref     = require('gulp-useref');
 var uglify    = require('gulp-uglify');
@@ -40,6 +41,14 @@ var dirs = pkg['h5bp-configs'].directories;
 var onError = function (err) {
     beep([1000, 500, 1500]);
     gutil.log(gutil.colors.red(err));
+};
+
+var paths = {
+  scripts: [
+    'src/app/app.js',
+    'src/components/**/*.js',
+    'src/js/plugins.js'
+    ]
 };
 
 // ---------------------------------------------------------------------
@@ -177,23 +186,33 @@ gulp.task('lint:js', function () {
       .pipe(plugins.jshint.reporter('fail'));
 });
 
+gulp.task('useref', function () {
+    return gulp.src('src/app/**/*.html')
+        .pipe(useref())
+        .pipe(gulp.dest('dist/'))
+});
+
 // ---------------------------------------------------------------------
 // | Minor tasks                                                        |
 // ---------------------------------------------------------------------
 
 // Watch JS for changes and reload on changes
 gulp.task('jshint', function () {
+<<<<<<< HEAD
     return gulp.src([
         'src/app/app.js',
         'src/app/**/*.js'
     ])
+=======
+    return gulp.src(paths.scripts)
+>>>>>>> 96c4396e9c51bbf95fad12e67ab7c6f309ed72bb
     .pipe(plumber())
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter(stylish))
     .pipe(jshint.reporter('fail'))
     .pipe(plumber({errorHandler: onError}))
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('src/js'))
     .pipe(filesize())
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
