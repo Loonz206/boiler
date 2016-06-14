@@ -32,8 +32,6 @@ angular.module('myApp', [
 	$scope.$sessionStorage = $sessionStorage;
 });
 
-
-
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
@@ -61,9 +59,8 @@ angular.module('myApp', [
 
 $(document).ready(function () {
     $('body').addClass('js');
-    // var $menu = $('#menu'),
-    var
-        $menulink = $('.menu-link'),
+
+    var $menulink = $('.menu-link'),
         $wrap = $('#wrap');
 
     $menulink.click(function() {
