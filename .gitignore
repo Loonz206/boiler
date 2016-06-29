@@ -11,5 +11,8 @@ node_modules
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
 
+#Build Folder
+dist/
+
 #Coverage reporting
 coverage/*
