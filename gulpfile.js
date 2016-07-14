@@ -12,7 +12,6 @@ var notify    = require('gulp-notify');
 var rename    = require('gulp-rename');
 var cache     = require('gulp-cache');
 var cssnano   = require('gulp-cssnano');
-var minifycss = require('gulp-minify-css');
 var less      = require('gulp-less');
 var path      = require('path');
 var browserSync = require('browser-sync').create();
