@@ -14,6 +14,11 @@ exports.config = {
   // protractor is called.
   specs: ['spec/e2e/**/*.spec.js'],
 
+  onPrepare: function() {
+    var SpecReporter = require('jasmine-spec-reporter'); // npm install jasmine-spec-reporter
+    jasmine.getEnv().addReporter(new SpecReporter({displayStacktrace: true}));
+  },
+
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
     showColors: true,
