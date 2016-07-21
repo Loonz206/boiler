@@ -74,7 +74,7 @@ each module.
 ### assets
 
 Kinda torn on this one for holding all of the assets needed for an application that are not
-images to be optimized. Aka fontawesome, svgs and PDF and whatever other items. I could remove this.
+images to be optimized. Aka font-awesome, SVGS and PDF and whatever other items. I could remove this.
 
 ### css
 
