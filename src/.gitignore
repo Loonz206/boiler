@@ -7,6 +7,7 @@
 .idea/dictionaries
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
+.editorconfig
 
 #Coverage reporting
 coverage/*
