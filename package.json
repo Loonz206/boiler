@@ -1,12 +1,13 @@
 {
   "devDependencies": {
     "@alrra/travis-scripts": "^1.1.1",
-    "angular": "^1.4.8",
-    "angular-ui-router": "^0.2.15",
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.2.18",
     "apache-server-configs": "2.14.0",
     "archiver": "^0.21.0",
     "beepbeep": "^1.2.0",
     "browser-sync": "^2.11.0",
+    "browserify": "^13.0.1",
     "connect-history-api-fallback": "^1.1.0",
     "del": "^2.2.0",
     "fs": "0.0.2",
@@ -34,7 +35,7 @@
     "gulp-util": "^3.0.7",
     "jasmine-core": "^2.4.1",
     "jasmine-spec-reporter": "^2.5.0",
-    "jquery": "1.11.3",
+    "jquery": "^1.11.3",
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.1.0",
     "karma": "^0.13.19",
@@ -43,13 +44,17 @@
     "karma-jasmine": "^0.3.6",
     "karma-phantomjs-launcher": "^1.0.0",
     "mocha": "^2.2.4",
+    "modernizr": "^3.3.1",
     "ngstorage": "^0.3.10",
     "normalize.css": "3.0.3",
     "path": "^0.12.7",
     "phantomjs-prebuilt": "^2.1.7",
     "plato": "^1.5.0",
     "protractor": "^3.2.2",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -71,7 +76,8 @@
   "private": true,
   "scripts": {
     "build": "gulp",
-    "test": "gulp test"
+    "test": "gulp test",
+    "smokeTests": "gulp smokeTests"
   },
   "version": "5.2.0"
 }
