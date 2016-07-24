@@ -1,5 +1,10 @@
 var fs        = require('fs');
 var path      = require('path');
+var browserify = require('browserify');
+var watchify = require('watchify');
+var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
+var assign = require('lodash.assign');
 var jshint    = require('gulp-jshint');
 var stylish   = require('jshint-stylish');
 var useref    = require('gulp-useref');
@@ -49,6 +54,36 @@ var paths = {
     'src/js/plugins.js'
     ]
 };
+
+// add custom browserify options here
+var customOpts = {
+  entries: ['./src/index.js'],
+  debug: true
+};
+var opts = assign({}, watchify.args, customOpts);
+var b = watchify(browserify(opts));
+
+// add transformations here
+// i.e. b.transform(coffeeify);
+
+gulp.task('js', bundle); // so you can run `gulp js` to build the file
+b.on('update', bundle); // on any dep update, runs the bundler
+b.on('log', gutil.log); // output build logs to terminal
+
+function bundle() {
+  return b.bundle()
+    // log errors if they happen
+    .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+    .pipe(source('index.js'))
+    // optional, remove if you don't need to buffer file contents
+    .pipe(buffer())
+    // optional, remove if you dont want sourcemaps
+    .pipe(sourcemaps.init({loadMaps: true})) // loads map from browserify file
+       // Add transformation tasks to the pipeline here.
+    .pipe(sourcemaps.write('./')) // writes .map file
+    .pipe(gulp.dest('src/js'))
+    .pipe(gulp.dest('dist/js'));
+}
 
 // ---------------------------------------------------------------------
 // | Helper tasks                                                      |
@@ -271,7 +306,7 @@ gulp.task('watch', function () {
 });
 
 // Serve a site after running multiple tasks
-gulp.task('serve', ['images', 'jshint', 'html', 'less'], function () {
+gulp.task('serve', ['images', 'js', 'jshint', 'html', 'less'], function () {
      browserSync.init({
         server: {
             baseDir: "src/.",
