@@ -378,7 +378,7 @@ gulp.task('protractor', ['webdriver_update'], function(cb) {
 });
 
 gulp.task('smokeTests', function () {
-    gulp.start('test','plato','protractor');
+    gulp.start('plato','protractor');
 });
 
 // Default task.. why type more?
