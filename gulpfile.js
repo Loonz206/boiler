@@ -2,6 +2,7 @@ var fs        = require('fs');
 var path      = require('path');
 var browserify = require('browserify');
 var watchify = require('watchify');
+var plato = require('plato');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var assign = require('lodash.assign');
@@ -321,6 +322,16 @@ gulp.task('serve', ['images', 'js', 'jshint', 'html', 'less'], function () {
 // | Main tasks                                                        |
 // ---------------------------------------------------------------------
 
+gulp.task('plato', [], function () {
+    var files = ['spec/e2e/**/*.spec.js', 'src/app/**/*.spec.js'];
+    var outputDir = './coverage';
+    var options = {title:'Boiler Coverage Report'};
+    var callback = function callback (report){
+        console.log('Plato Boiler Coverage Report');
+    };
+    plato.inspect(files, outputDir, options, callback);
+});
+
 // Test suites for integration tests using Karma/Jasmine running on .spec.js files
 gulp.task('test', function (done) {
   new Server({
@@ -367,7 +378,7 @@ gulp.task('protractor', ['webdriver_update'], function(cb) {
 });
 
 gulp.task('smokeTests', function () {
-    gulp.start('protractor');
+    gulp.start('test','plato','protractor');
 });
 
 // Default task.. why type more?
