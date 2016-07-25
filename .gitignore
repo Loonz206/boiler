@@ -11,6 +11,11 @@ node_modules
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
 
+# Logs
+logs
+*.log
+npm-debug.log*
+
 #Build Folder
 dist/
 
