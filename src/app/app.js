@@ -13,9 +13,9 @@ angular.module('myApp', [
 	$urlRouterProvider.otherwise("/home");
 	$stateProvider
 		.state('home', {
-			url: "/home",
-			templateUrl: "index.html"
-		});
+	      url: "/home",
+	      templateUrl: "app/home/home.tpl.html"
+	    });
 
 	//Needed this to remove the # in the urls
 	$locationProvider.html5Mode(true);
