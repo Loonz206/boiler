@@ -15,6 +15,10 @@ angular.module('myApp', [
 		.state('home', {
 	      url: "/home",
 	      templateUrl: "app/home/home.tpl.html"
+	    })
+	    .state('about', {
+	      url: "/about",
+	      templateUrl: "app/about/about.tpl.html"
 	    });
 
 	//Needed this to remove the # in the urls
