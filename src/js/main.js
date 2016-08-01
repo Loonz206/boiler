@@ -11,6 +11,7 @@ angular.module('myApp', [
 
 	$compileProvider.debugInfoEnabled(false);
 	$urlRouterProvider.otherwise("/home");
+	//main views get populated here.
 	$stateProvider
 		.state('home', {
 	      url: "/home",
