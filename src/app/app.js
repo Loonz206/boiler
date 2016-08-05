@@ -15,7 +15,7 @@ angular.module('myApp', [
 	$stateProvider
 		.state('home', {
 	      url: "/home",
-	      templateUrl: "app/home/home.tpl.html"
+	      templateUrl: "app/home/home.tpl.html",
 	    })
 	    .state('about', {
 	      url: "/about",
