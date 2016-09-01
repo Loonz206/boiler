@@ -37,6 +37,8 @@ angular.module('myApp', [
 	$scope.$sessionStorage = $sessionStorage;
 });
 
+
+
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
