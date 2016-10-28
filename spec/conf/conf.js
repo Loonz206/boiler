@@ -7,6 +7,12 @@ exports.config = {
     'browserName': 'chrome'
   },
 
+  baseUrl:'https://localhost:3000',
+
+  rootElement:'body',
+
+  resultJsonOutputFile: 'protractor.results.json',
+
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',
 
@@ -19,7 +25,13 @@ exports.config = {
     jasmine.getEnv().addReporter(new SpecReporter({displayStacktrace: true}));
   },
 
+  allScriptsTimeout: 120000,
+
+  getPageTimeout: 60000,
+
+
   // Options to be passed to Jasmine.
+  framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
     realtimeFailure: true,
