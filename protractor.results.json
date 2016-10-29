@@ -1,0 +1,11 @@
+[
+  {
+    "description": "should be truthy",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5
+  }
+]
