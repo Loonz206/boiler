@@ -27,6 +27,11 @@
 
     "browser": true,
     "jquery": true,
-    "node": true
-
+    "node": true,
+     "globals": {
+        "angular": false,
+        "describe": false,
+        "it": false,
+        "expect": false
+    }
 }
