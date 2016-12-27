@@ -143,6 +143,12 @@
 @lgSize: 71.25em; /*1140px/16px*/
 @xlSize: 90em; /*1440px/16px*/
 
+.img-responsive {
+	width:100%;
+	height:auto;
+	display: block;
+}
+
 .responsive(@maxWidth; @rules) {
     @media only screen and (max-width: @maxWidth) {
         @rules();
