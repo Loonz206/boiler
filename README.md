@@ -35,3 +35,5 @@ and to run e2e tests
 gulp smokeTests
 ```
 
+NOTE: For Windows, run **npm install gulp --global gulp-cli** in addition to npm install. It will install the Command Line Utility for gulp. 
+
