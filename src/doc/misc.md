@@ -1,6 +1,3 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com) | [Documentation
-table of contents](TOC.md)
-
 # Miscellaneous
 
 * [.gitignore](#gitignore)

@@ -1,9 +1,9 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com) | [Documentation
+[Boiler homepage](https://github.com/Loonz206/boiler) | [Documentation
 table of contents](TOC.md)
 
 # Usage
 
-Once you have cloned or downloaded HTML5 Boilerplate, creating a site or app
+Once you have cloned or downloaded Boiler, creating a site or app
 usually involves the following:
 
 1. Set up the basic structure of the site.
@@ -166,5 +166,5 @@ If you want to use different Apple Touch Icons for different resolutions please
 refer to the [according documentation](extend.md#apple-touch-icons).
 
 You might want to check out Hans' handy [HTML5 Boilerplate Favicon and Apple
-Touch Icon
+Touch Icon that can be used for whatever project
 PSD-Template](https://drublic.de/blog/html5-boilerplate-favicons-psd-template/).

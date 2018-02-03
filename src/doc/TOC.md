@@ -1,11 +1,11 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com)
+[HTML5 Boilerplate homepage](https://github.com/Loonz206/boiler)
 
 ## Getting started
 
 * [Usage](usage.md) — Overview of the project contents.
 * [FAQ](faq.md) — Frequently asked questions along with their answers.
 
-## HTML5 Boilerplate core
+## Boiler core
 
 * [HTML](html.md) — Guide to the default HTML.
 * [CSS](css.md) — Guide to the default CSS.
@@ -14,7 +14,7 @@
 
 ## Development
 
-* [Extending and customizing HTML5 Boilerplate](extend.md) — Going further
+* [Extending and customizing Boiler](extend.md) — Going further
   with the boilerplate.
 
 ## Related projects

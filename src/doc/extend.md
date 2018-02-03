@@ -1,7 +1,7 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com) | [Documentation
+[Boiler homepage](https://github.com/Loonz206/boiler) | [Documentation
 table of contents](TOC.md)
 
-# Extend and customise HTML5 Boilerplate
+# Extend and customise Boiler
 
 Here is some useful advice for how you can make your project with HTML5
 Boilerplate even better. We don't want to include it all by default, as

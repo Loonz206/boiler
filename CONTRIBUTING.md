@@ -1,7 +1,4 @@
-# Contributing to HTML5 Boilerplate
-
-♥ [HTML5 Boilerplate](https://html5boilerplate.com) and want to get involved?
-Thanks! There are plenty of ways you can help!
+## Contributing to Boiler
 
 Please take a moment to review this document in order to make the contribution
 process easy and effective for everyone involved.
@@ -11,16 +8,10 @@ the developers managing and developing this open source project. In return,
 they should reciprocate that respect in addressing your issue or assessing
 patches and features.
 
+Boiler was build using a combination of HTMLBoilerplate, NgBp for Angular Projects,
+and other toolsets.
 
 ## Using the issue tracker
-
-The [issue tracker](https://github.com/h5bp/html5-boilerplate/issues) is
-the preferred channel for [bug reports](#bugs), [features requests](#features)
-and [submitting pull requests](#pull-requests), but please respect the following
-restrictions:
-
-* Please **do not** use the issue tracker for personal support requests (use
-  [Stack Overflow](https://stackoverflow.com/questions/tagged/html5boilerplate)).
 
 * Please **do not** derail or troll issues. Keep the discussion on topic and
   respect the opinions of others.
@@ -107,11 +98,11 @@ included in the project:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/html5-boilerplate.git
+   git clone https://github.com/<your-username>/boiler.git
    # Navigate to the newly cloned directory
-   cd html5-boilerplate
+   cd boiler
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/h5bp/html5-boilerplate.git
+   git remote add upstream https://github.com/<your-username>/boiler.git
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:

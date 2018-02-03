@@ -1,4 +1,4 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com) | [Documentation
+[Boiler homepage](https://github.com/Loonz206/boiler) | [Documentation
 table of contents](TOC.md)
 
 # Frequently asked questions
@@ -58,5 +58,4 @@ latest changes, but you'll have to assess the costs/benefits of doing so.
 
 ### Where can I get help with support questions?
 
-Please ask for help on
-[StackOverflow](https://stackoverflow.com/questions/tagged/html5boilerplate).
+Ping or create PR's on this repo.

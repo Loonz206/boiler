@@ -1,4 +1,4 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com) | [Documentation
+[Boiler homepage](https://github.com/Loonz206/boiler) | [Documentation
 table of contents](TOC.md)
 
 # The HTML
