@@ -22,3 +22,4 @@ dist/
 
 #Coverage reporting
 coverage/*
+protractor.results.json

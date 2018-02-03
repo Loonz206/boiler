@@ -1,6 +1,5 @@
 {
   "devDependencies": {
-    "@alrra/travis-scripts": "^1.1.1",
     "angular": "~1.5.8",
     "angular-ui-router": "^0.2.18",
     "apache-server-configs": "2.14.0",
@@ -71,7 +70,7 @@
   "homepage": "https://lennypeters.com/",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt"
+    "url": "https://github.com/Loonz206/boiler/blob/master/LICENSE.txt"
   },
   "name": "boiler",
   "private": true,
