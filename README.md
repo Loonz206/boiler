@@ -1,11 +1,37 @@
-##This is an Application Starting Boiler using elements of Ngbp and HTML5 boilerplate
-_It had to be made as a starter setup to begin projects_
+[![Build Status](https://travis-ci.org/Loonz206/boiler.svg?style=flat-square)](https://travis-ci.org/Loonz206/boiler)
 
-I know there is probably a million things out there for this stuff but I like this
-hybrid with my background doing websites.
+## Boiler - an opinionated Angular 1.x starter
+_This had to be done for starting new applications that need testing, and e2e testing_
 
-Dependencies for the project is
-**node.js, gulp, karma, phantom.js, protractor, less**
+Following some of the nice provided docs that were served from these two wonderful
+repositories. These two projects were the basis for me blending together something to make to
+get a Angular application going.
 
-clone the project and run **npm install**
+* [HTML 5 Boilerplate](https://github.com/h5bp/html5-boilerplate)
+* [NgBp](https://github.com/ngbp/ngbp)
+
+Special thanks to the Angular 1.X team, Protractor and NgBp in explaining 
+reasons and opinions behind the scaffolding for this application.
+
+Dependencies for this project are
+**node, gulp, karma, phantom.js, protractor, less**
+
+### Set-up
+
+To install the project run
+```
+npm install
+```     
+to serve the application locally with auto-refreshing via Browser-sync 
+```
+gulp
+```
+to run unit tests
+```
+gulp test
+```
+and to run e2e tests
+```
+gulp smokeTests
+```
 
