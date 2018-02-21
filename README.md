@@ -1,5 +1,9 @@
 [![Build Status](https://travis-ci.org/Loonz206/boiler.svg?style=flat-square)](https://travis-ci.org/Loonz206/boiler)
 
+<div style="width: 10%; margin: auto;">
+    <img src="./src/img/boiler-logo.png" alt="Boiler - an opinionated Angular 1.x starter"/>
+</div>
+
 ## Boiler - an opinionated Angular 1.x starter
 _This had to be done for starting new applications that need testing, and e2e testing_
 
